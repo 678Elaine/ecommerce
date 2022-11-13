@@ -1,11 +1,11 @@
 <?php
-require('../controllers/product_controller.php');
+require('product_controller.php');
 $product = list_products_controller()
 ?>
 
 <html>
     <body>
-        <form action="../actions/productprocess.php" method="POST">
+        <form action="productprocess.php" method="POST">
             Search <input type = "text" name="search_term"><br>
 
             <input type = "submit" name="search">
