@@ -1,7 +1,7 @@
 <?php
 
-include("../customer_controller.php");
-require('../core.php');
+include("customer_controller.php");
+require('core.php');
 
 if(isset ($_POST['login'])){
     $email = $_POST['email'];
@@ -21,7 +21,7 @@ if(isset ($_POST['login'])){
         header("Location: ../admin.php");
     }else{
         echo 'Incorrect password or username';
-        header("Location: ../login.php?error=Incorrect username or password");
+        header("Location: login.php?error=Incorrect username or password");
     }
 }
 
