@@ -1,8 +1,8 @@
 <?php
-//This is the processing page
+This is the processing page
 
 //making action aware of controller
-include("../customer_controller.php");
+include("customer_controller.php");
 
 
 //collecting form data
