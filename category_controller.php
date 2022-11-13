@@ -1,6 +1,6 @@
 <?php
 
-require('../classes/category_class.php');
+require('category_class.php');
 
 function insert_category($catname)
 {
