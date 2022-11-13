@@ -50,7 +50,7 @@
     <div>
 
         <h1> Login below </h1>
-    <form method = "POST" action = "../loginprocess.php">
+    <form method = "POST" action = "loginprocess.php">
         
         <input type="text" name="email" placeholder="Enter your email" id="email" required></br>
         <input type="password" name="password" placeholder="Enter your password" id="password" required></br>
