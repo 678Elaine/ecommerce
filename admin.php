@@ -4,3 +4,4 @@
 <button type="submit" name ="login"><a href= "update_category.php"> Update a Category </a></button>
 <button type="submit" name ="login"><a href= "addproduct.php"> Add a product </a></button>
 <button type="submit" name ="login"><a href= "Update_product.php"> Update a product </a></button>
+<button type="submit" name ="login"><a href= "all_product.php"> Search a product </a></button>
