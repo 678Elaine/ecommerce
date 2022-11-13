@@ -1,6 +1,6 @@
 <?php
 
-require('../classes/brand_class.php');
+require('brand_class.php');
 
 function insert_brand($brandname)
 {
