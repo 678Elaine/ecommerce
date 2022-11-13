@@ -6,7 +6,7 @@
 
 
 //making action aware of controller
-include("../controllers/product_controller.php");
+include("../product_controller.php");
 
 
 //collecting form data
@@ -59,7 +59,7 @@ if(isset($_POST["updateproduct"])){
  
 
 // $results = update_product_controller( $id, $category, $brand, $title, $price, $description, $keyword,);
-//     if($results == true){header("Location: ../view/admin.php");
+//     if($results == true){header("Location: ../admin.php");
 // }
  }
 
@@ -120,6 +120,6 @@ foreach($search_product as $row)
 ?>
     </body>
 
-     <button type="submit" name ="admin"><a href= "../view/admin.php"> Return to Admin </a></button>
+     <button type="submit" name ="admin"><a href= "../admin.php"> Return to Admin </a></button>
 
  </html>
