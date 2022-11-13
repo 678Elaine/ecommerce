@@ -9,13 +9,13 @@
 
 <body>
 <?php
-require('../product_controller.php');
+require('product_controller.php');
 $products = select_one_product_controller($_GET['id']);
 $Brand = list_brands_controller();
 $category = list_category_controller();
 ?>
 
-<form method="POST" action="../productprocess.php" >
+<form method="POST" action="productprocess.php" >
 <label > Product Category </label>
 <select name="category" id="FormControlSelect1">
     <option value=""> Please Select Category </option>
@@ -68,7 +68,7 @@ $category = list_category_controller();
 
 
 </form>
-<script src = "../work.js"></script>
+<script src = "work.js"></script>
 
 </body>
 
