@@ -1,7 +1,7 @@
 <?php
 
-include("../controllers/customer_controller.php");
-require('../settings/core.php');
+include("../customer_controller.php");
+require('../core.php');
 
 if(isset ($_POST['login'])){
     $email = $_POST['email'];
@@ -18,10 +18,10 @@ if(isset ($_POST['login'])){
         $_SESSION['customer_id']=$final['customer_id'];
         $_SESSION['user_role'] = $final['user_role'];
         $_SESSION['customer_id'] = $final['customer_id'];
-        header("Location: ../view/admin.php");
+        header("Location: ../admin.php");
     }else{
         echo 'Incorrect password or username';
-        header("Location: ../view/login.php?error=Incorrect username or password");
+        header("Location: ../login.php?error=Incorrect username or password");
     }
 }
 
