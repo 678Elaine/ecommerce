@@ -1,5 +1,9 @@
-<?php
+<html>
+    <body>
+    <?php
 //This is the processing page
+
+
 
 //making action aware of controller
 include("../controllers/product_controller.php");
@@ -59,4 +63,63 @@ if(isset($_POST["updateproduct"])){
 // }
  }
 
+ if (isset ($_POST["search"])){
+     $keyword=$_POST['search_term'];
+
+     $search_product = search_allproduct($keyword);
+     if($search_product){
+
+        echo
+  "
+<h3> Database Information </h3>
+<table class='table table-dark table-striped table-bordered'>
+
+<thead>
+   <tr>
+       <th> Product ID  </th>
+       <th> Product Category</th>
+       <th> Product Brand</th>
+       <th> Product Title</th>
+       <th> Product Price</th>
+       <th> Product Description</th>
+       <th> Product Image</th>
+       <th> Product Keywords</th>
+       <th> Actions </th>
+
+   </tr>
+<thead>";
+
+
+foreach($search_product as $row)
+{
+   echo 
+   "
+   <tbody>
+   <tr>
+   <td>".$row['product_id']."</td>
+   <td>".$row['product_cat']."</td>
+   <td>".$row['product_brand']."</td>
+   <td>".$row['product_title']."</td>
+   <td>".$row['product_price']."</td>
+   <td>".$row['product_desc']."</td>
+   <td>".$row['product_image']."</td>
+   <td> ".$row['product_keywords']."  </td>
+   </td>
+   
+   ";
+       
+     }
+    }else{
+         echo "Re-enter";
+     }
+     }
+ 
+
+
+
 ?>
+    </body>
+
+     <button type="submit" name ="admin"><a href= "../view/admin.php"> Return to Admin </a></button>
+
+ </html>

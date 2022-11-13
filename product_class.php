@@ -55,7 +55,11 @@ function search_allproduct_class($keyword){
     var_dump($sql1);
     }
 
-
+// SELECT
+function view_product()
+{
+    $sql ="SELECT products.product_id, products.product_cat, products.product_brand, products.product_title, products.product_price, products.product_desc, products.product_keywords";
+}
 
 
 }
