@@ -10,7 +10,7 @@
 
 <?php
 
-require('../controllers/brand_controller.php');
+require('brand_controller.php');
 $brand = selectone_brand($_GET['id']);
 
 ?>
@@ -57,7 +57,7 @@ $brand = selectone_brand($_GET['id']);
     <div>
 
         <h1> Update Brand </h1>
-    <form method = "POST" action = "../actions/brandprocess.php">
+    <form method = "POST" action = "brandprocess.php">
         <input type="text" name="id" id="id" placeholder="id" > </br>
         <input type="text" name="name" id= "name" placeholder="Product name" > </br>
         <input type="submit" name ="updateProductID"> 
