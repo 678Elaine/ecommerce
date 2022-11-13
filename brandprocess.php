@@ -2,7 +2,7 @@
 //This is the processing page
 
 //making action aware of controller
-include("../controllers/brand_controller.php");
+include("brand_controller.php");
 
 
 //collecting form data
@@ -24,7 +24,7 @@ if(isset($_POST["updateProductID"])){
     $name = $_POST['name'];
 
     $results = update_onebrand($id,$name);
-    if($results == true){header("Location: ../view/admin.php")};
+    if($results == true){header("Location: ../admin.php")};
 }
 
 ?>
