@@ -1,6 +1,6 @@
 <?php
 
-require("../settings/db_class.php");
+require("db_class.php");
 
 class Brand extends db_connection{
     function insert_brand_class($brandname){
