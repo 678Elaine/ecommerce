@@ -9,7 +9,7 @@
 <body> 
 
 <?php
-include("../customer_class.php");
+include("customer_class.php");
 
 
 
