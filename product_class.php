@@ -1,5 +1,5 @@
 <?php
-require("../settings/db_class.php");
+require("../db_class.php");
 
 class Product extends db_connection{
 function list_brands(){
