@@ -1,5 +1,5 @@
 <?php
-This is the processing page
+echo "This is the processing page";
 
 //making action aware of controller
 include("customer_controller.php");
