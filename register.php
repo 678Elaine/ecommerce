@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/regex.js"></script>
+    <script src="../regex.js"></script>
     <title>Register!</title>
 </head>
 <body>
@@ -52,7 +52,7 @@
       
 
         <h1> Register below </h1>
-    <form action="../actions/registerprocess.php" method = "POST" name="form1">
+    <form action="../registerprocess.php" method = "POST" name="form1">
         <input type="text" name="fullname" placeholder="Enter your name" id="fullname" required></br>
         <input type="text" name="email" placeholder="Enter your email" id="email" required></br>
         <input type="password" name="password" placeholder="Enter your password" id="password" required></br>
