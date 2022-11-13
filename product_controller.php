@@ -1,6 +1,6 @@
 <?php
 
-require('../classes/product_class.php');
+require('../product_class.php');
 
 function list_brands_controller(){
     $product_instance = new Product();
