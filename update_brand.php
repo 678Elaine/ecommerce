@@ -1,6 +1,6 @@
 <?php
-require('../settings/core.php');
-require('../controllers/brand_controller.php');
+require('../core.php');
+require('../brand_controller.php');
 
 $brand= select_allbrand();
 
@@ -35,7 +35,7 @@ foreach($run_item as $row)
     <td>".$row['brand_id']."</td>
     <td> ".$row['brand_name']."  </td>
     <td>
-    <a href = '../actions/Updatebrand.php?id=".$row['brand_id']."'>Update</a>
+    <a href = '../Updatebrand.php?id=".$row['brand_id']."'>Update</a>
     </td>
     ";
 
