@@ -1,6 +1,6 @@
 <?php
-require('../settings/core.php');
-require('../controllers/product_controller.php');
+require('core.php');
+require('product_controller.php');
 
 $product= select_allproduct();
 
@@ -46,7 +46,7 @@ foreach($run_item as $row)
     <td>".$row['product_image']."</td>
     <td> ".$row['product_keywords']."  </td>
     <td>
-    <a href = '../view/updateproduct.php?id=".$row['product_id']."'>Update</a>
+    <a href = 'updateproduct.php?id=".$row['product_id']."'>Update</a>
     </td>
     ";
 
