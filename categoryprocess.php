@@ -2,7 +2,7 @@
 //This is the processing page
 
 //making action aware of controller
-include("../controllers/category_controller.php");
+include("category_controller.php");
 
 
 //collecting form data
@@ -23,6 +23,6 @@ if(isset($_POST["updateCategoryID"])){
     $name = $_POST['name'];
 
     $results = update_onecategory($id,$name);
-    if($results == true) header ("Location: ../view/admin.php");
+    if($results == true) header ("Location: ../admin.php");
 }
 ?>
