@@ -1,6 +1,6 @@
 <?php
-require('../settings/core.php');
-require('../controllers/category_controller.php');
+require('../core.php');
+require('../category_controller.php');
 
 $brand= select_allcategory();
 
@@ -35,7 +35,7 @@ foreach($run_item as $row)
     <td>".$row['cat_id']."</td>
     <td> ".$row['cat_name']."  </td>
     <td>
-    <a href = '../actions/Updatecategory.php?id=".$row['cat_id']."'>Update</a>
+    <a href = '../Updatecategory.php?id=".$row['cat_id']."'>Update</a>
     </td>
     ";
 
