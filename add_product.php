@@ -1,6 +1,6 @@
 <?php
 
-require('../Controllers/product_controller.php');
+require('product_controller.php');
 
 if(isset($_POST['addproduct'])){
 
@@ -50,9 +50,9 @@ if($check['product_title'] != $title){
     $result = add_product_controller($category,$brand, $title, $price, $description, $fileDestination, $keyword);
 
     if($result === true){
-        header("Location: ../view/admin.php");
+        header("Location: ../admin.php");
     }else{
-        header("Location: ../view/login.php");
+        header("Location: ../login.php");
     }
 
     }
