@@ -10,7 +10,7 @@
 
 <?php
 
-require('../controllers/category_controller.php');
+require('category_controller.php');
 $category = selectone_category($_GET['id']);
 
 ?>
@@ -57,7 +57,7 @@ $category = selectone_category($_GET['id']);
     <div>
 
         <h1> Update Brand </h1>
-    <form method = "POST" action = "../actions/categoryprocess.php">
+    <form method = "POST" action = "categoryprocess.php">
         <input type="text" name="id" id="id" placeholder="id" > </br>
         <input type="text" name="name" id= "name" placeholder="Category name" > </br>
         <input type="submit" name ="updateCategoryID"> 
