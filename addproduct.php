@@ -59,7 +59,6 @@ $category = list_category_controller();
 <label for="InputKeyword"> Keyword </label>
 <input name="keyword" type="text" id="InputKeyword" placeholder="keyword">
 
-<input type="file" name="image" accept="image/png, image/jpg">
 
 <button type="submit" name="addproduct"> Submit </button>
 
