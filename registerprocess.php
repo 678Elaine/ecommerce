@@ -2,7 +2,7 @@
 //This is the processing page
 
 //making action aware of controller
-include("../controllers/customer_controller.php");
+include("../customer_controller.php");
 
 
 //collecting form data
